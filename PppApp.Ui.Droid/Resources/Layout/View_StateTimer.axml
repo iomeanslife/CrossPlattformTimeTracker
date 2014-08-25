@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Text CurrentTodoItemTitle" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Text CurrentTimertState" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Text TimeLeft" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Click StartTimerCommandPomodoro"
+        android:text="Pomodoro" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Click StartTimerCommandShortRest"
+        android:text="Short Rest" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Click StartTimerCommandLongRest"
+        android:text="Long Rest" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Click StopTimerCommandInterrupted"
+        android:text="Stop" />
+</LinearLayout>
